@@ -11,7 +11,7 @@ data "terraform_remote_state" "vpc" {
 # Datasource for AMI 
 data "aws_ami" "ami" {
   most_recent      = true
-  name_regex       = "DevOps-LabImage-Centos-8"
-  owners           = ["355449129696"]
+  name_regex       = "centos8-with-ansible"     # Give the AMI ID of the AMI Created with Ansible Installed ( Use the base image as centos-8 lab image )
+  owners           = ["355449129696"]           # give your aws account number 
 }
 
