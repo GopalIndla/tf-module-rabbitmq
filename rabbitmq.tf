@@ -12,7 +12,6 @@ resource "aws_spot_instance_request" "rabbitmq" {
 }
 
 # Once the server is provisioned, I would like run a playbook that should Configure the RabbitMQ Installation 
-
 resource "null_resource"  "app_install" {
     connection {
     type     = "ssh"
